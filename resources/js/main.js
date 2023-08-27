@@ -70,3 +70,17 @@ accordionItems.forEach(item => {
 
 // nextButton.addEventListener('click', nextSlide);
 // prevButton.addEventListener('click', prevSlide);
+const imageSliders = document.querySelectorAll('.slider-item');
+
+setInterval(function(){
+  if(imageSliders[0].classList.contains('swiper')){
+    imageSliders[1].classList.add('swiper');
+    imageSliders[0].classList.remove('swiper');    
+  }else if(imageSliders[1].classList.contains('swiper')){
+      imageSliders[2].classList.add('swiper'); 
+      imageSliders[1].classList.remove('swiper'); 
+    }else if(imageSliders[2].classList.contains('swiper')){
+      imageSliders[0].classList.add('swiper'); 
+      imageSliders[2].classList.remove('swiper'); 
+      }
+},2200);

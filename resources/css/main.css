@@ -570,6 +570,65 @@ img{
     padding: 5rem 0;
     background-color: var(--light-black-color);
 }
+/*-- ============================ Map ============================= */
+#map{
+    padding: 5rem 0;
+}
+.slider-container{
+    width: 40%;
+    height: 28rem;
+    margin: 0 auto;
+    /* border: 1rem solid var(--border-color); */
+    position: relative;
+    overflow: hidden;
+    border: 0.2rem solid var(--border-color);
+    background: var(--theme-bg-color);
+
+}
+.slider{
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+}
+.slider-item{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.swiper{
+    opacity: 1;
+    visibility: visible;
+}
+.prev-button,
+.next-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    outline: 0;
+    border: none;
+    cursor: pointer; 
+}
+.prev-button{
+    left: 1rem;
+}
+.next-button{
+    right: 1rem;
+}
+.prev-button:hover,
+.next-button:hover{
+    color: var(--white-color);
+}
+
+
 /*-- ============================ Footer ============================= */
 
 #footer{
