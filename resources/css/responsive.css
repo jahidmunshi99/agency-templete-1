@@ -61,6 +61,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* ➡️ Small tablets: 768px to 991px  */
 @media (max-width:768px){ 
 /* Reusable Components */
@@ -129,7 +130,9 @@
     .contact-button{
         text-align: center;
     }
-}
+    /* .slider{
+        grid-template-rows: minmax(auto, 200px);
+    } */
 @media (max-width:480px){    
 }
 ➡️ Mobile: Up to 480px 
